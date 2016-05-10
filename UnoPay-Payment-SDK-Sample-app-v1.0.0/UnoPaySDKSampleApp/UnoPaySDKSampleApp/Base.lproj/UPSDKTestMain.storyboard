@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="UPSDKTestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T2v-Ba-7Tc">
+                                <rect key="frame" x="38" y="145" width="518" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oIT-lf-Tge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dkc-1x-Hd5">
+                                <rect key="frame" x="41" y="79" width="513" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vXh-AU-dKd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UnoPay Sample App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1i-b4-jyn">
+                                <rect key="frame" x="0.0" y="40" width="600" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Vpm-UM-p85"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKd-P6-Q70">
+                                <rect key="frame" x="38" y="197" width="527" height="58"/>
+                                <color key="backgroundColor" red="0.0" green="0.72549019609999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="HAs-Oo-g8o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Pay Using UnoPay">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="payUsingUnopay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZR9-hL-lmC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T2v-Ba-7Tc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="7Dl-Tq-xyM"/>
+                            <constraint firstItem="I1i-b4-jyn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="OgB-9t-8EG"/>
+                            <constraint firstItem="dkc-1x-Hd5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="Rbm-gI-5xl"/>
+                            <constraint firstItem="I1i-b4-jyn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VSa-FA-JaA"/>
+                            <constraint firstItem="lKd-P6-Q70" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4.5" id="WX2-Xn-6g7"/>
+                            <constraint firstItem="lKd-P6-Q70" firstAttribute="top" secondItem="T2v-Ba-7Tc" secondAttribute="bottom" constant="8" id="b8i-2G-Bvf"/>
+                            <constraint firstItem="dkc-1x-Hd5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="j21-Wy-19D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dkc-1x-Hd5" secondAttribute="trailing" constant="26" id="je0-52-Eob"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lKd-P6-Q70" secondAttribute="trailing" constant="15" id="nDR-Q2-yOm"/>
+                            <constraint firstItem="lKd-P6-Q70" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="qeX-Me-Hdy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I1i-b4-jyn" secondAttribute="trailing" constant="-20" id="sJN-ZQ-0vy"/>
+                            <constraint firstItem="T2v-Ba-7Tc" firstAttribute="top" secondItem="dkc-1x-Hd5" secondAttribute="bottom" constant="22" id="vaL-nY-Pxn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T2v-Ba-7Tc" secondAttribute="trailing" constant="24" id="yU5-jb-Cfr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WX2-Xn-6g7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="amount" destination="T2v-Ba-7Tc" id="hto-2M-owQ"/>
+                        <outlet property="mobileNumber" destination="dkc-1x-Hd5" id="R1n-D9-dKZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="311"/>
+        </scene>
+    </scenes>
+</document>
